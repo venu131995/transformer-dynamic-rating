@@ -1,0 +1,408 @@
+{
+  "data": {
+    "load": "Swissgrid EnergieUebersichtCH 2023-2025, total end-user consumption, 15 min",
+    "ambient": "MeteoSwiss SwissMetNet BUS (Buchs/Aarau), hourly mean air temperature",
+    "rows": 105216,
+    "days_rated": 1075,
+    "load_peak_mw": 9576.807,
+    "load_mean_mw": 6095.839121077593,
+    "load_factor": 0.6365210368213113
+  },
+  "thermal_model": "IEC 60076-7:2018 typical parameters (Table 4); base case Medium/large ONAF",
+  "verification": {
+    "steady_hot_spot_rated_20C": {
+      "Distribution ONAN": 98.0,
+      "Medium/large ONAN": 98.0,
+      "Medium/large ONAF": 98.0,
+      "Medium/large OF": 98.0
+    },
+    "exact_vs_closed_form_max_K": 1.4210854715202004e-13,
+    "difference_eq_errors_K": {
+      "4.0": 4.152794220803585,
+      "2.0": 1.9499805334992288,
+      "1.0": 0.9453840100915158,
+      "0.5": 0.4658240822614772,
+      "0.25": 0.23124817793502928
+    },
+    "difference_eq_order": 1.039873955385992,
+    "oil_energy_balance_max_step_rel": 1.3824873606897681e-15,
+    "oil_energy_balance_cumulative_rel": 1.6569867924378806e-20,
+    "exact15_vs_difference1min_2024": {
+      "max_K": 0.06895900520598275,
+      "mean_K": 0.014959958909464196
+    }
+  },
+  "annual_peak_equals_nameplate": [
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real",
+      "year": 2023,
+      "hot_spot_max": 83.273,
+      "top_oil_max": 69.177,
+      "loss_of_life_days": 4.133,
+      "days": 365.0
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real",
+      "year": 2024,
+      "hot_spot_max": 75.967,
+      "top_oil_max": 63.767,
+      "loss_of_life_days": 3.908,
+      "days": 366.0
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real",
+      "year": 2025,
+      "hot_spot_max": 78.371,
+      "top_oil_max": 66.303,
+      "loss_of_life_days": 3.867,
+      "days": 365.0
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "constant 20 C",
+      "year": 2023,
+      "hot_spot_max": 93.298,
+      "top_oil_max": 71.592,
+      "loss_of_life_days": 13.818,
+      "days": 365.0
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "constant 20 C",
+      "year": 2024,
+      "hot_spot_max": 93.545,
+      "top_oil_max": 71.79,
+      "loss_of_life_days": 14.396,
+      "days": 366.0
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "constant 20 C",
+      "year": 2025,
+      "hot_spot_max": 92.381,
+      "top_oil_max": 70.775,
+      "loss_of_life_days": 14.92,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real",
+      "year": 2023,
+      "hot_spot_max": 85.655,
+      "top_oil_max": 67.969,
+      "loss_of_life_days": 1.194,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real",
+      "year": 2024,
+      "hot_spot_max": 78.4,
+      "top_oil_max": 62.455,
+      "loss_of_life_days": 1.107,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real",
+      "year": 2025,
+      "hot_spot_max": 80.389,
+      "top_oil_max": 64.902,
+      "loss_of_life_days": 1.102,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "constant 20 C",
+      "year": 2023,
+      "hot_spot_max": 96.436,
+      "top_oil_max": 69.916,
+      "loss_of_life_days": 4.454,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "constant 20 C",
+      "year": 2024,
+      "hot_spot_max": 96.241,
+      "top_oil_max": 70.143,
+      "loss_of_life_days": 4.658,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "constant 20 C",
+      "year": 2025,
+      "hot_spot_max": 95.388,
+      "top_oil_max": 69.312,
+      "loss_of_life_days": 4.869,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real",
+      "year": 2023,
+      "hot_spot_max": 85.998,
+      "top_oil_max": 68.345,
+      "loss_of_life_days": 1.227,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real",
+      "year": 2024,
+      "hot_spot_max": 78.667,
+      "top_oil_max": 62.813,
+      "loss_of_life_days": 1.133,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real",
+      "year": 2025,
+      "hot_spot_max": 80.735,
+      "top_oil_max": 65.189,
+      "loss_of_life_days": 1.13,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "constant 20 C",
+      "year": 2023,
+      "hot_spot_max": 97.021,
+      "top_oil_max": 70.66,
+      "loss_of_life_days": 4.528,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "constant 20 C",
+      "year": 2024,
+      "hot_spot_max": 96.807,
+      "top_oil_max": 70.689,
+      "loss_of_life_days": 4.74,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "constant 20 C",
+      "year": 2025,
+      "hot_spot_max": 96.224,
+      "top_oil_max": 70.008,
+      "loss_of_life_days": 4.961,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real",
+      "year": 2023,
+      "hot_spot_max": 81.967,
+      "top_oil_max": 67.069,
+      "loss_of_life_days": 0.76,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real",
+      "year": 2024,
+      "hot_spot_max": 75.73,
+      "top_oil_max": 60.834,
+      "loss_of_life_days": 0.709,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real",
+      "year": 2025,
+      "hot_spot_max": 76.476,
+      "top_oil_max": 63.388,
+      "loss_of_life_days": 0.707,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "constant 20 C",
+      "year": 2023,
+      "hot_spot_max": 95.757,
+      "top_oil_max": 73.74,
+      "loss_of_life_days": 3.152,
+      "days": 365.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "constant 20 C",
+      "year": 2024,
+      "hot_spot_max": 95.617,
+      "top_oil_max": 73.924,
+      "loss_of_life_days": 3.318,
+      "days": 366.0
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "constant 20 C",
+      "year": 2025,
+      "hot_spot_max": 94.478,
+      "top_oil_max": 72.907,
+      "loss_of_life_days": 3.466,
+      "days": 365.0
+    }
+  ],
+  "max_uniform_peak": [
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real",
+      "max_peak_pu": 1.4086,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.452
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "constant 20 C",
+      "max_peak_pu": 1.2426,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.4003
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real + 3 K",
+      "max_peak_pu": 1.3849,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.4928
+    },
+    {
+      "cooling": "Distribution ONAN",
+      "ambient": "real, load shifted 6 months",
+      "max_peak_pu": 1.1797,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.2447
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real",
+      "max_peak_pu": 1.3932,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.1133
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "constant 20 C",
+      "max_peak_pu": 1.2181,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0955
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real + 3 K",
+      "max_peak_pu": 1.3685,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.1241
+    },
+    {
+      "cooling": "Medium/large ONAN",
+      "ambient": "real, load shifted 6 months",
+      "max_peak_pu": 1.1563,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0611
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real",
+      "max_peak_pu": 1.384,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.108
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "constant 20 C",
+      "max_peak_pu": 1.2108,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0918
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real + 3 K",
+      "max_peak_pu": 1.3595,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.1185
+    },
+    {
+      "cooling": "Medium/large ONAF",
+      "ambient": "real, load shifted 6 months",
+      "max_peak_pu": 1.1509,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0605
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real",
+      "max_peak_pu": 1.329,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0742
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "constant 20 C",
+      "max_peak_pu": 1.1875,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0698
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real + 3 K",
+      "max_peak_pu": 1.3092,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0814
+    },
+    {
+      "cooling": "Medium/large OF",
+      "ambient": "real, load shifted 6 months",
+      "max_peak_pu": 1.1473,
+      "binding": "hot-spot",
+      "hot_spot_max": 120.0,
+      "worst_year_ageing": 0.0543
+    }
+  ],
+  "daily_rating": {
+    "mean": 1.2801794112875757,
+    "min": 1.0973359448507836,
+    "max": 1.43768938429821,
+    "by_season": {
+      "winter (DJF)": 1.3562609079271943,
+      "spring (MAM)": 1.2902868165522736,
+      "summer (JJA)": 1.1903471319413987,
+      "autumn (SON)": 1.2866384673271691
+    },
+    "slope_pu_per_K": -0.009812060517977325,
+    "intercept_pu_at_0C": 1.3913423698914051,
+    "binding_counts": {
+      "hot-spot 120 C": 908,
+      "ageing 1 day/day": 167
+    },
+    "share_days_above_1p2": 0.8390697674418605
+  },
+  "heatwave": {
+    "start": "2023-08-18",
+    "end": "2023-08-24",
+    "mean_ambient": 25.18311011904762,
+    "rating_min": 1.1051196004391386,
+    "rating_mean": 1.1323626963933617
+  }
+}
