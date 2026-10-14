@@ -63,9 +63,14 @@ about 0.3 s. The six days with a clock change are left out.
 | Exact 15-min solver vs IEC equations on 1-min sub-steps, full year 2024 | max difference 0.07 K, mean 0.015 K |
 | Oil energy balance (stored heat = heat in - heat out), every 15-min step of 2024 | relative residual 1.4e-15 per step, 1.7e-20 cumulative |
 | Rating search | re-simulating a day at its rating stays within all limits; 1 % above breaks one |
+| Independent re-implementation (scipy LSODA, rtol 1e-9) of the ONAF year 2024 | hot-spot max 78.667 degC and ageing 1.133 days, identical to the pipeline |
+| Brute-force search (step 0.0005 pu) on 8 random days | ratings agree within the search step |
+| Brute-force check of the 1.384 pu headline over all three years | 1.384 pu gives 119.99 degC, 1.385 pu gives 120.12 degC |
+| Data sanity | Swiss end-user consumption 53.4-53.5 TWh per year, peaks 9.5-9.6 GW |
 
 The thermal model is a lumped heat balance: there is no flow field, so mass and momentum balances do not
-apply. The energy balance of the oil is checked to round-off (above). 12 automated tests in `tests/`.
+apply. The energy balance of the oil is checked to round-off (above). 12 automated tests in `tests/`; the independent
+checks are in `scripts/independent_checks.py`.
 
 ## Results
 
@@ -111,7 +116,10 @@ Hot-spot binds on 908 days and ageing on 167. The ageing-limited days are warmer
 
 ## Limitations
 
-* **IEC typical parameters**, not a specific transformer. A real study would use the unit's heat-run test
+* **IEC typical parameters**, not a specific transformer. The time constants, k-factors and exponents for
+  distribution ONAN and medium/large ONAN and ONAF were cross-checked against the defaults of Alliander's
+  open-source IEC 60076-7 implementation (`transformer-thermal-model`); the rated rises and loss ratios R, and the
+  OF row, are typical values chosen so that rated load at 20 degC gives the 98 degC reference hot-spot. A real study would use the unit's heat-run test
   report (rise values, time constants, exponents).
 * **National load shape.** A single substation transformer sees a peakier, more local load. The aggregate
   Swiss profile is smoother, which flatters the static result. The six-month shift shows how strongly the
